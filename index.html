@@ -326,10 +326,15 @@
   .program-card.wide .num{flex:none;}
 
   /* ---------- bonuses ---------- */
+  .oferta-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:44px;
+    align-items:center;
+  }
   .bonus-wrap{
     display:block;
-    max-width:640px;
-    margin:50px auto 0;
+    margin:30px auto 0;
   }
   .bonus-list{list-style:none;margin:0;padding:0;}
   .bonus-list li{
@@ -460,7 +465,7 @@
     .vision-grid{grid-template-columns:1fr;}
     .program-grid{grid-template-columns:1fr;}
     .program-card.wide{flex-direction:column;align-items:flex-start;}
-    .bonus-wrap{grid-template-columns:1fr;}
+    .oferta-grid{grid-template-columns:1fr;gap:32px;}
     .testi-grid{grid-template-columns:1fr;}
     .price-new{font-size:46px;}
     .offer-card{padding:40px 24px;}
@@ -500,17 +505,17 @@
     <span class="hero-ipa" style="top:6px; right:10%; font-size:30px;">ˈʃ</span>
     <div class="hero-copy">
       <span class="eyebrow">Membresía de pronunciación</span>
-      <h1>Hay una forma de aprender inglés que <em class="accent">nunca</em> te enseñaron en una academia.</h1>
+      <h1>Hay una forma de aprender inglés que <em class="accent">nunca</em> te enseñaron.</h1>
     </div>
     <div class="hero-video-wrap">
       <div class="video-card" role="group" aria-label="Video de presentación de Clarity">
-        <iframe src="https://player.vimeo.com/video/1224811292?h=97f71cbc00&amp;title=0&amp;byline=0&amp;portrait=0" title="Video de presentación de Clarity" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1224979444?h=7936b91f19&amp;title=0&amp;byline=0&amp;portrait=0" title="Video de presentación de Clarity" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <p class="lead">Clarity es para ti si <strong>lees y entiendes inglés</strong> — lo estudiaste por años — pero cuando tienes que <strong>hablarlo</strong>, tu boca no responde igual de rápido.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="https://nas.com/immersa-academy/join-membership/695350d1a42b7bcd416a950e" target="_blank" rel="noopener noreferrer">Quiero unirme a Clarity</a>
-      <span class="btn-note">Oferta especial $27 USD/mes · cupos limitados</span>
+      <span class="btn-note">Oferta especial <s style="text-decoration:line-through;opacity:0.65;">$47 USD</s> $27 USD/mes · cupos limitados</span>
     </div>
   </div>
 </section>
@@ -546,7 +551,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-8 4 16 3-8h4" stroke="#2d7a72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Conoce cómo funciona el inglés</h3>
-        <p>Aprendes los sonidos reales del idioma: vocales, consonantes, contracciones, reducciones, y mucho más.</p>
+        <p>Aprendes los sonidos reales del inglés americano: vocales, consonantes, contracciones, reducciones, y mucho más.</p>
       </div>
       <span class="flow-arrow" aria-hidden="true">→</span>
       <div class="flow-step">
@@ -636,41 +641,39 @@
   </div>
 </section>
 
-<!-- ============ BONOS ============ -->
-<section class="section bg-mint">
+<!-- ============ BONOS + OFERTA ============ -->
+<section class="section bg-mint" id="oferta">
   <div class="wrap">
-    <div class="problem-head" style="max-width:640px;">
-      <span class="eyebrow">Si tomas acción hoy</span>
-      <h2>Te llevas estos 7 bonus.</h2>
-    </div>
-    <div class="bonus-wrap">
-      <ul class="bonus-list">
-        <li><span class="icon">✓</span><p>Las 100 frases más utilizadas en el inglés de la vida real</p></li>
-        <li><span class="icon">✓</span><p>Los 100 phrasal verbs más comunes</p></li>
-        <li><span class="icon">✓</span><p>Cómo aprender inglés con series y películas</p></li>
-        <li><span class="icon">✓</span><p>Qué es la inmersión y cómo hacerla</p></li>
-        <li><span class="icon">✓</span><p>Cómo aprender vocabulario correctamente</p></li>
-        <li><span class="icon">✓</span><p>Cómo convertirte en un hablante del inglés</p></li>
-        <li><span class="icon">✓</span><p>El reto de 30 días para mejorar tu speaking</p></li>
-        <li><span class="icon">✓</span><p>Taller grabado de 1h30: los errores que nadie te dice que debes evitar</p></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ OFERTA ============ -->
-<section class="section bg-white" id="oferta">
-  <div class="wrap">
-    <div class="offer-card">
-      <span class="eyebrow">Acceso completo hoy</span>
-      <h2>Clarity + los 7 bonos (solo por tiempo limitado)</h2>
-      <div class="price-row">
-        <span class="price-old">$47 USD</span>
-        <span class="price-new"><sup>$</sup>27<span style="font-size:20px;">&nbsp;USD/mes</span></span>
+    <div class="oferta-grid">
+      <div class="bonus-col">
+        <div class="problem-head" style="max-width:640px;">
+          <span class="eyebrow">Si tomas acción hoy</span>
+          <h2>Te llevas estos 7 bonus.</h2>
+        </div>
+        <div class="bonus-wrap">
+          <ul class="bonus-list">
+            <li><span class="icon">✓</span><p>Las 100 frases más utilizadas en el inglés de la vida real</p></li>
+            <li><span class="icon">✓</span><p>Los 100 phrasal verbs más comunes</p></li>
+            <li><span class="icon">✓</span><p>Cómo aprender inglés con series y películas</p></li>
+            <li><span class="icon">✓</span><p>Qué es la inmersión y cómo hacerla</p></li>
+            <li><span class="icon">✓</span><p>Cómo aprender vocabulario correctamente</p></li>
+            <li><span class="icon">✓</span><p>Cómo convertirte en un hablante del inglés</p></li>
+            <li><span class="icon">✓</span><p>El reto de 30 días para mejorar tu speaking</p></li>
+            <li><span class="icon">✓</span><p>Taller grabado de 1h30: los errores que nadie te dice que debes evitar</p></li>
+          </ul>
+        </div>
       </div>
-      <p class="offer-sub">Cupos limitados</p>
-      <a class="btn-primary" href="https://nas.com/immersa-academy/join-membership/695350d1a42b7bcd416a950e" target="_blank" rel="noopener noreferrer">Quiero unirme a Clarity</a>
-      <span class="btn-note">Pago mensual · cancela cuando quieras</span>
+      <div class="offer-card">
+        <span class="eyebrow">Acceso completo hoy</span>
+        <h2>Clarity + los 7 bonos (solo por tiempo limitado)</h2>
+        <div class="price-row">
+          <span class="price-old">$47 USD</span>
+          <span class="price-new"><sup>$</sup>27<span style="font-size:20px;">&nbsp;USD/mes</span></span>
+        </div>
+        <p class="offer-sub">Cupos limitados</p>
+        <a class="btn-primary" href="https://nas.com/immersa-academy/join-membership/695350d1a42b7bcd416a950e" target="_blank" rel="noopener noreferrer">Quiero unirme a Clarity</a>
+        <span class="btn-note">Pago mensual · cancela cuando quieras</span>
+      </div>
     </div>
   </div>
 </section>
@@ -680,7 +683,7 @@
   <div class="wrap">
     <div class="problem-head" style="max-width:640px;">
       <span class="eyebrow">Lo que dicen mis estudiantes</span>
-      <h2>Resultados de estudiantes reales.</h2>
+      <h2>Esto es el efecto Clarity.</h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card">
@@ -741,9 +744,10 @@
 <section class="section bg-mint final-cta">
   <div class="wrap">
     <h2>Poder entender y usar el inglés empieza con una decisión.</h2>
+    <p class="lead">Únete a Clarity, la transformación de dejar de “adivinar” el inglés y empezar a escucharlo, reconocerlo y hablarlo.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="https://nas.com/immersa-academy/join-membership/695350d1a42b7bcd416a950e" target="_blank" rel="noopener noreferrer">Haz clic aquí y nos vemos adentro de Clarity</a>
-      <span class="btn-note">Oferta especial $27 USD/mes · cupos limitados</span>
+      <span class="btn-note">Oferta especial <s style="text-decoration:line-through;opacity:0.65;">$47 USD</s> $27 USD/mes · cupos limitados</span>
     </div>
   </div>
 </section>
